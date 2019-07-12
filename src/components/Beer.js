@@ -20,9 +20,20 @@ class Beer extends Component {
     return (
 
       <div className="">
+        <style jsx>{`
+          .beerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            width: 50%;
+            height: 100%;
+            border: 1px solid red;
+          }
+
+        `}
+        </style>
         <p>THIS IS TEH BEER PAGE</p>
         <section>
-          <div className='mapFunc'>
+          <div className='beerContainer'>
             {beerList.map((bev, index) =>
               <BeerDisplay
                 name={bev.beerName}

@@ -13,27 +13,41 @@ function BeerDisplay(props){
   }
   console.log(props);
   return (
-    <div>
+    <div className = 'e'>
       <style jsx>{`
         i{
           cursor: pointer;
         }
+        a{
 
+        }
+        b{
+
+        }
+        c{
+
+        }
+        d{
+
+        }
+        e{
+
+        }
       `}
       </style>
       <p>{props.name}</p>
       <p>{props.volume}</p>
-      <div className=''>
-        <div className=''>
+      <div className='a'>
+        <div className='b'>
           {
             props.details.map((bev,i)=>{
               console.log(bev)
-              return <p className='' key={i}>{bev}</p>;
+              return <p className='c' key={i}>{bev}</p>;
             })
           }
         </div>
 
-        <div className=''>
+        <div className='d'>
 
 
           <i onClick ={addPint} className="fa fa-angle-up fa-2x"></i>
