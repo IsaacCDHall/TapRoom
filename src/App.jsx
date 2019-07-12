@@ -16,8 +16,17 @@ class App extends Component {
     this.handleSellPint = this.handleSellPint.bind(this);
     this.updateClass = this.updateClass.bind(this);
   }
-  handleSellPint(){
-
+  handleSellPint(eachBeer){
+    console.log('sellPint');
+    let newState = Object.assign([], this.state.beerList);
+    for (let i=0; i<newState.length; i++){
+      if (newState[i].id === eachBeer.id){
+        newState[i].volume --;
+        console.log(newState[i].volume);
+        console.log(eachBeer)
+      }
+    }
+    this.setState({beerList: newState});
   }
   handleDeleteKeg(){
 

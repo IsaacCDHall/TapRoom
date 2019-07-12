@@ -14,6 +14,9 @@ function BeerDisplay(props){
   return (
     <div>
       <style jsx>{`
+        i{
+          cursor: pointer;
+        }
 
       `}
       </style>
@@ -32,7 +35,7 @@ function BeerDisplay(props){
         <div className=''>
 
 
-          <i onClick={sellPint} className="fa fa-angle-down"></i>
+          <i onClick={sellPint} className="fa fa-angle-down fa-2x"></i>
         </div>
         <i onClick ={deleteKeg} className="fa fa-times fa-2x"></i>
 

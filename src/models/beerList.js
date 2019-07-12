@@ -7,7 +7,7 @@ const beerList = [
     ],
     brewery: 'Isaac\'s Toilet',
     abv: '5%',
-    volume: '100oz Remaining',
+    volume: '100',
     id: 0,
   },
   {
@@ -18,7 +18,7 @@ const beerList = [
     ],
     brewery: 'Isaac\'s Toilet',
     abv: '5%',
-    volume: '99oz Remaining',
+    volume: '99',
     id: 1,
   },
   {
@@ -29,7 +29,7 @@ const beerList = [
     ],
     brewery: 'Isaac\'s Toilet',
     abv: '5%',
-    volume: '95oz Remaining',
+    volume: '95',
     id: 2,
   },
   {
@@ -40,7 +40,7 @@ const beerList = [
     ],
     brewery: 'Isaac\'s Toilet',
     abv: '5%',
-    volume: '90oz Remaining',
+    volume: '90',
     id: 3,
   },
   {
@@ -51,7 +51,7 @@ const beerList = [
     ],
     brewery: 'Isaac\'s Toilet',
     abv: '5%',
-    volume: '80oz Remaining',
+    volume: '80',
     id:4,
   },
   {
@@ -62,7 +62,7 @@ const beerList = [
     ],
     brewery: 'Isaac\'s Toilet',
     abv: '5%',
-    volume: '100oz Remaining',
+    volume: '100',
     id:5,
   },
   {
@@ -73,7 +73,7 @@ const beerList = [
     ],
     brewery: 'Isaac\'s Toilet',
     abv: '5%',
-    volume: '60oz Remaining',
+    volume: '60',
     id:6,
   },
   {
@@ -84,7 +84,7 @@ const beerList = [
     ],
     brewery: 'Isaac\'s Toilet',
     abv: '100%',
-    volume: '7.3oz Remaining',
+    volume: '7.3',
     id:7,
   }
 
