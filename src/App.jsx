@@ -5,6 +5,8 @@ import Header from './components/Header.js'
 import MainPage from './components/MainPage.js'
 import beerList from './models/beerList.js'
 import Beer from './components/Beer.js'
+import beerBG from './models/beerBG.jpg'
+
 class App extends Component {
   constructor(){
     super()
