@@ -6,15 +6,7 @@ class Header extends Component {
     return (
       <div className="">
         <p>test</p>
-        <BrowserRouter>
-
-          <Link to="/" style={{ textDecoration: 'none' }}>
-            <a>Home</a>
-          </Link>
-          <Link to='../Beers' style={{ textDecoration: 'none' }}>
-            <a>Beers</a>
-          </Link>
-        </BrowserRouter>
+      
       </div>
     );
 

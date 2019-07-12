@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header.js'
 import MainPage from './components/MainPage.js'
@@ -21,6 +21,7 @@ class App extends Component {
 
   }
   render(){
+    console.log(this.state.beerList[1]);
     return (
       <div className="App">
         <style jsx global>{`
@@ -31,10 +32,13 @@ class App extends Component {
           }`}
         </style>
         <Header/>
-        <Switch>
-          <Route exact path ='/' component={MainPage}/>
-          <Route exact path ='/Beers' component={() => <Beer beerList={this.state.beerList} handleSellPint={this.handleSellPint} handleDeleteKeg={this.handleDeleteKeg}/>}/>
-        </Switch>
+        <BrowserRouter>
+
+          <Switch>
+            <Route exact path ='/' component={MainPage}/>
+            <Route exact path ='/Beers' component={() => <Beer beerList={this.state.beerList} handleSellPint={this.handleSellPint} handleDeleteKeg={this.handleDeleteKeg}/>}/>
+          </Switch>
+        </BrowserRouter>
       </div>
 
     );
