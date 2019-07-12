@@ -17,7 +17,9 @@
   opacity: 1;
   background-color: rgba(244,81,30,0.7);
 }
-html, body{
+.contain{
+  width: 100vw;
+  height: 100vh;
   background: url("./models/beerBG.jpg") no-repeat center center fixed;
   background-size:cover;
 

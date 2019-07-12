@@ -11,10 +11,12 @@ class App extends Component {
   constructor(){
     super()
     this.state= {
-      beerList: beerList
+      beerList: beerList,
+      className: 'contain'
     }
     this.handleDeleteKeg = this.handleDeleteKeg.bind(this);
     this.handleSellPint = this.handleSellPint.bind(this);
+    this.updateClass = this.updateClass.bind(this);
   }
   handleSellPint(){
 
@@ -22,19 +24,28 @@ class App extends Component {
   handleDeleteKeg(){
 
   }
+  updateClass() {
+    let className = '';
+    className = className + ' '
+    this.setState({className})
+  }
   render(){
     console.log(this.state.beerList[1]);
+    console.log(this.state.className);
     return (
-      <div className="App">
+      <div className={this.state.className}>
+        <div className="App">
 
-        <Header/>
-        <HashRouter>
+          <Header/>
+          <HashRouter>
 
-          <Switch>
-            <Route exact path ='/' component={MainPage}/>
-            <Route exact path ='/Beers' component={() => <Beer beerList={this.state.beerList} handleSellPint={this.handleSellPint} handleDeleteKeg={this.handleDeleteKeg}/>}/>
-          </Switch>
-        </HashRouter>
+            <Switch>
+              <Route exact path ='/' component={MainPage}/>
+              <Route exact path ='/Beers' component={() => <Beer beerList={this.state.beerList} handleSellPint={this.handleSellPint} handleDeleteKeg={this.handleDeleteKeg}/>}/>
+            </Switch>
+          </HashRouter>
+        </div>
+
       </div>
 
     );
