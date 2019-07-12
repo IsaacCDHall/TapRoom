@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 
 function BeerDisplay(props){
 
+  function addPint(){
+    props.handleAddPint({id: props.id});
+    console.log(props.volume)
+  }
   function sellPint(){
     props.handleSellPint({id: props.id});
     console.log(props.volume)
-  }
-  function deleteKeg(){
-    props.handleDeleteKeg({id: props.id});
-    console.log(props)
   }
   console.log(props);
   return (
@@ -36,8 +36,8 @@ function BeerDisplay(props){
 
 
           <i onClick={sellPint} className="fa fa-angle-down fa-2x"></i>
+          <i onClick ={addPint} className="fa fa-times fa-2x"></i>
         </div>
-        <i onClick ={deleteKeg} className="fa fa-times fa-2x"></i>
 
       </div>
 

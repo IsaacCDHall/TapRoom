@@ -12,7 +12,7 @@ class App extends Component {
       beerList: beerList,
       className: 'contain'
     }
-    this.handleDeleteKeg = this.handleDeleteKeg.bind(this);
+    this.handleAddPint = this.handleAddPint.bind(this);
     this.handleSellPint = this.handleSellPint.bind(this);
     this.updateClass = this.updateClass.bind(this);
   }
@@ -28,8 +28,17 @@ class App extends Component {
     }
     this.setState({beerList: newState});
   }
-  handleDeleteKeg(){
-
+  handleAddPint(eachBeer){
+    console.log('buyPint');
+    let newStateZ = Object.assign([], this.state.beerList);
+    for (let i=0; i<newStateZ.length; i++){
+      if (newStateZ[i].id === eachBeer.id){
+        newStateZ[i].volume ++;
+        console.log(newStateZ[i].volume);
+      };
+    };
+    console.log(eachBeer)
+    this.setState({beerList: newStateZ});
   }
   componentDidMount(){
   }
@@ -51,7 +60,7 @@ class App extends Component {
 
             <Switch>
               <Route exact path ='/' component={MainPage}/>
-              <Route exact path ='/Beers' component={() => <Beer beerList={this.state.beerList} handleSellPint={this.handleSellPint} handleDeleteKeg={this.handleDeleteKeg}/>}/>
+              <Route exact path ='/Beers' component={() => <Beer beerList={this.state.beerList} handleSellPint={this.handleSellPint} handleAddPint={this.handleAddPint}/>}/>
             </Switch>
           </HashRouter>
         </div>
