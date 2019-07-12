@@ -17,12 +17,13 @@ function BeerDisplay(props){
 
       `}
       </style>
-      <h3>{props.name}</h3>
+      <p>{props.name}</p>
       <p>{props.volume}</p>
       <div className=''>
         <div className=''>
           {
             props.details.map((bev,i)=>{
+              console.log(bev)
               return <p className='' key={i}>{bev}</p>;
             })
           }

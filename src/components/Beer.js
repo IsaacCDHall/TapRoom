@@ -25,7 +25,7 @@ class Beer extends Component {
           <div className='mapFunc'>
             {beerList.map((bev, index) =>
               <BeerDisplay
-                name={bev.drinkName}
+                name={bev.beerName}
                 details={bev.details}
                 id={bev.id}
                 key={index}
