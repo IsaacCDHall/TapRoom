@@ -2,10 +2,10 @@ const beerList = [
   {
     beerName: 'pruno',
     details: [
-      'Isaac\'s Toilet',
+      'My Bathtub',
       '5% abv'
     ],
-    brewery: 'Isaac\'s Toilet',
+    brewery: 'My Bathtub',
     abv: '5%',
     volume: '100',
     id: 0,
@@ -13,10 +13,10 @@ const beerList = [
   {
     beerName: 'pruno1',
     details: [
-      'Isaac\'s Toilet',
+      'My Bathtub',
       '5% abv'
     ],
-    brewery: 'Isaac\'s Toilet',
+    brewery: 'My Bathtub',
     abv: '5%',
     volume: '99',
     id: 1,
@@ -24,10 +24,10 @@ const beerList = [
   {
     beerName: 'pruno2',
     details: [
-      'Isaac\'s Toilet',
+      'My Bathtub',
       '5% abv'
     ],
-    brewery: 'Isaac\'s Toilet',
+    brewery: 'My Bathtub',
     abv: '5%',
     volume: '95',
     id: 2,
@@ -35,10 +35,10 @@ const beerList = [
   {
     beerName: 'pruno3',
     details: [
-      'Isaac\'s Toilet',
+      'My Bathtub',
       '5% abv'
     ],
-    brewery: 'Isaac\'s Toilet',
+    brewery: 'My Bathtub',
     abv: '5%',
     volume: '90',
     id: 3,
@@ -46,10 +46,10 @@ const beerList = [
   {
     beerName: 'pruno4',
     details: [
-      'Isaac\'s Toilet',
+      'My Bathtub',
       '5% abv'
     ],
-    brewery: 'Isaac\'s Toilet',
+    brewery: 'My Bathtub',
     abv: '5%',
     volume: '80',
     id:4,
@@ -57,10 +57,10 @@ const beerList = [
   {
     beerName: 'pruno5',
     details: [
-      'Isaac\'s Toilet',
+      'My Bathtub',
       '5% abv'
     ],
-    brewery: 'Isaac\'s Toilet',
+    brewery: 'My Bathtub',
     abv: '5%',
     volume: '100',
     id:5,
@@ -68,10 +68,10 @@ const beerList = [
   {
     beerName: 'pruno6',
     details: [
-      'Isaac\'s Toilet',
+      'My Bathtub',
       '5% abv'
     ],
-    brewery: 'Isaac\'s Toilet',
+    brewery: 'My Bathtub',
     abv: '5%',
     volume: '60',
     id:6,
@@ -79,10 +79,10 @@ const beerList = [
   {
     beerName: 'pruno777',
     details: [
-      'Isaac\'s Toilet',
+      'My Bathtub',
       '100% abv'
     ],
-    brewery: 'Isaac\'s Toilet',
+    brewery: 'My Bathtub',
     abv: '100%',
     volume: '7.3',
     id:7,

@@ -26,12 +26,12 @@ class Beer extends Component {
             flex-flow: column wrap;
             width: 50%;
             height: 100%;
-            border: 1px solid red;
           }
 
         `}
         </style>
         <p>THIS IS TEH BEER PAGE</p>
+        <br/>
         <section>
           <div className='beerContainer'>
             {beerList.map((bev, index) =>
@@ -43,6 +43,7 @@ class Beer extends Component {
                 volume={bev.volume}
                 handleSellPint={this.props.handleSellPint}
                 handleAddPint={this.props.handleAddPint}
+                className='zzz'
               />
             )}
 
