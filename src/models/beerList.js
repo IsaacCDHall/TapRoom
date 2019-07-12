@@ -8,6 +8,7 @@ const beerList = [
     brewery: 'Isaac\'s Toilet',
     abv: '5%',
     volume: '100oz Remaining',
+    id: 0,
   },
   {
     beerName: 'pruno1',
@@ -18,6 +19,7 @@ const beerList = [
     brewery: 'Isaac\'s Toilet',
     abv: '5%',
     volume: '99oz Remaining',
+    id: 1,
   },
   {
     beerName: 'pruno2',
@@ -28,6 +30,7 @@ const beerList = [
     brewery: 'Isaac\'s Toilet',
     abv: '5%',
     volume: '95oz Remaining',
+    id: 2,
   },
   {
     beerName: 'pruno3',
@@ -38,6 +41,7 @@ const beerList = [
     brewery: 'Isaac\'s Toilet',
     abv: '5%',
     volume: '90oz Remaining',
+    id: 3,
   },
   {
     beerName: 'pruno4',
@@ -48,6 +52,7 @@ const beerList = [
     brewery: 'Isaac\'s Toilet',
     abv: '5%',
     volume: '80oz Remaining',
+    id:4,
   },
   {
     beerName: 'pruno5',
@@ -58,6 +63,7 @@ const beerList = [
     brewery: 'Isaac\'s Toilet',
     abv: '5%',
     volume: '100oz Remaining',
+    id:5,
   },
   {
     beerName: 'pruno6',
@@ -68,6 +74,7 @@ const beerList = [
     brewery: 'Isaac\'s Toilet',
     abv: '5%',
     volume: '60oz Remaining',
+    id:6,
   },
   {
     beerName: 'pruno777',
@@ -78,6 +85,7 @@ const beerList = [
     brewery: 'Isaac\'s Toilet',
     abv: '100%',
     volume: '7.3oz Remaining',
+    id:7,
   }
 
 ];

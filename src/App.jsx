@@ -5,14 +5,6 @@ import Header from './components/Header.js'
 import MainPage from './components/MainPage.js'
 import beerList from './models/beerList.js'
 import Beer from './components/Beer.js'
-import beerBG from './models/beerBG.jpg'
-
-const mainBG = {
-  backgroundImage: beerBG,
-  backgroundRepeat: 'no-repeat',
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-}
 class App extends Component {
   constructor(props){
     super(props)
@@ -31,7 +23,6 @@ class App extends Component {
 
   }
   componentDidMount(){
-    document.body.style= {mainBG}
   }
   updateClass() {
     let className = '';
