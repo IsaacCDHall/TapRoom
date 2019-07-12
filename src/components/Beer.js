@@ -5,7 +5,7 @@ class Beer extends Component {
   render(){
     return (
       <div className="">
-        <p>Beer</p>
+        <p>THIS IS TEH BEER PAGE</p>
       </div>
     );
 

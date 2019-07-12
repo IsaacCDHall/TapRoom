@@ -1,12 +1,19 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router-dom';
+import { Link, HashRouter } from 'react-router-dom';
 
 class Header extends Component {
   render(){
     return (
       <div className="">
-        <p>test</p>
-      
+        <HashRouter>
+
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <a>Home</a>
+          </Link>
+          <Link to='/Beers' style={{ textDecoration: 'none' }}>
+            <a>Beers</a>
+          </Link>
+        </HashRouter>
       </div>
     );
 
