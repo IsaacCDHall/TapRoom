@@ -31,7 +31,7 @@ class Beer extends Component {
                 key={index}
                 volume={bev.volume}
                 handleSellPint={this.props.handleSellPint}
-                handleDeleteKeg={this.props.handleDeleteKeg}
+                handleAddPint={this.props.handleAddPint}
               />
             )}
 

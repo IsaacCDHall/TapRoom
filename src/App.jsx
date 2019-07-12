@@ -15,7 +15,9 @@ class App extends Component {
     this.handleAddPint = this.handleAddPint.bind(this);
     this.handleSellPint = this.handleSellPint.bind(this);
     this.updateClass = this.updateClass.bind(this);
+  
   }
+
   handleSellPint(eachBeer){
     console.log('sellPint');
     let newState = Object.assign([], this.state.beerList);

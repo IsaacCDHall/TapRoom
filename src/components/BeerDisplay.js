@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 function BeerDisplay(props){
+  console.log(props)
 
   function addPint(){
     props.handleAddPint({id: props.id});
@@ -35,8 +36,8 @@ function BeerDisplay(props){
         <div className=''>
 
 
+          <i onClick ={addPint} className="fa fa-angle-up fa-2x"></i>
           <i onClick={sellPint} className="fa fa-angle-down fa-2x"></i>
-          <i onClick ={addPint} className="fa fa-times fa-2x"></i>
         </div>
 
       </div>
