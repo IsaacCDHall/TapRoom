@@ -14,6 +14,12 @@ class App extends Component {
     this.handleDeleteKeg = this.handleDeleteKeg.bind(this);
     this.handleSellPint = this.handleSellPint.bind(this);
   }
+  handleSellPint(){
+
+  }
+  handleDeleteKeg(){
+
+  }
   render(){
     return (
       <div className="App">
