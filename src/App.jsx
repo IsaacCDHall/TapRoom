@@ -7,9 +7,15 @@ import beerList from './models/beerList.js'
 import Beer from './components/Beer.js'
 import beerBG from './models/beerBG.jpg'
 
+const mainBG = {
+  backgroundImage: beerBG,
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+}
 class App extends Component {
-  constructor(){
-    super()
+  constructor(props){
+    super(props)
     this.state= {
       beerList: beerList,
       className: 'contain'
@@ -24,10 +30,14 @@ class App extends Component {
   handleDeleteKeg(){
 
   }
+  componentDidMount(){
+    document.body.style= {mainBG}
+  }
   updateClass() {
     let className = '';
-    className = className + ' '
+    className = 'cover'
     this.setState({className})
+    console.log(className)
   }
   render(){
     console.log(this.state.beerList[1]);
