@@ -4,8 +4,8 @@
 1. [Goals](#Goals)
 1. [Planning Mock-ups](#Planning)
 1. [Notes](#notes)
-1. [Installation](#Installation)
 1. [License](#license)
+1. [Scripts](#Scripts)
 
 ### Description
 I am using React.js with font awesome for chevrons and trash icons, plus react router dom for a HashRouter
@@ -73,7 +73,7 @@ MIT
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Scripts
 
 In the project directory, you can run:
 
