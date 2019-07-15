@@ -1,3 +1,76 @@
+# SpongeBob Kegger
+
+1. [Description](#description)
+1. [Goals](#Goals)
+1. [Planning Mock-ups](#Planning)
+1. [Notes](#notes)
+1. [Installation](#Installation)
+1. [License](#license)
+
+### Description
+I am using React.js with font awesome for chevrons and trash icons, plus react router dom for a HashRouter
+
+### Goals
+
+ __Tasks :__
+
+         - [x] A completed task
+         - [ ] An uncompleted task
+
+ __MVP :__
+
+         - [x] Webpack
+         - [x] Dev Server HMR/Hot-swapping
+         - [x] client-side routing
+         - [x] Linting
+         - [x] Styles are successfully added using CSS objects.
+         - [x] Effective use of State with best practices.
+         - [x] Documentation accurately represents component/state structure of application.
+       
+
+ __Stretch Goals :__
+
+         - [x] DRY CODE
+         - [ ] React Hook
+         - [ ] Svg animation with anime.js
+         - [ ] Upload custom audio
+         - [ ] PWA
+         - [ ] Offline Service/Storage
+         - [ ] Production Mode 
+         - [ ] Optimization
+
+  __Optimization :__
+
+         - [NA/100] Performance
+         - [NA/100] Accessibility
+         - [NA/100] Best Practices
+         - [NA/100] SEO
+         - [NA/100] Progressive Web App
+
+### Planning
+
+![](src/models/componentTree.svg)
+
+![](src/models/Mobile.png)
+
+![](src/models/Desktop.png)
+
+### Notes
+
+* Need to create oAuth page for login verification, custom/favorite beer list
+
+### License
+MIT
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
