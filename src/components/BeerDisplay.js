@@ -36,9 +36,14 @@ function BeerDisplay(props){
         .d{
           display:flex;
           justify-content: space-evenly;
-          width: 25%;
+          width: 30%;
           height: 100%;
 
+        }
+        @media only screen and (max-width: 600px) {
+          .d {
+            width: 60%;
+          }
         }
         .e{
           display: flex;
@@ -87,6 +92,7 @@ function BeerDisplay(props){
           <i  onClick={sellPint} className="fa fa-angle-down fa-2x"></i>
 
       </div>
+      <p></p>
       <i onClick={deleteKeg} className="fa fa-trash"></i>
     </div>
 
