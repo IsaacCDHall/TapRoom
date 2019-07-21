@@ -41,6 +41,8 @@ class Beer extends Component {
                 id={bev.id}
                 key={index}
                 volume={bev.volume}
+                abv={bev.abv}
+                brewery={bev.brewery}
                 handleSellPint={this.props.handleSellPint}
                 handleAddPint={this.props.handleAddPint}
                 handleDeleteKeg={this.props.handleDeleteKeg}

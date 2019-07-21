@@ -76,14 +76,14 @@ function BeerDisplay(props){
       <div className='a'>
         <p>{props.name}</p>
         <p><span className='volume'>{props.volume}</span> Oz remaining</p>
-        <div className='b'>
-          {
-            props.details.map((bev,i)=>{
-              console.log(bev)
-              return <p className='c' key={i}>{bev}</p>;
-              })
-            }
-          </div>
+
+        {
+          props.details.map((bev,i)=>{
+            console.log(bev)
+            return <p className='c' key={i}>{bev}</p>;
+          })
+        }
+
       </div>
 
       <div className='d'>
