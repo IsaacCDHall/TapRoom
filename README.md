@@ -26,6 +26,8 @@ I am using React.js with font awesome for chevrons and trash icons, plus react r
          - [x] Styles are successfully added using CSS objects.
          - [x] Effective use of State with best practices.
          - [x] Documentation accurately represents component/state structure of application.
+         - [ ] Add form creation for new beers
+         - [ ] Add Delete Keg button
        
 
  __Stretch Goals :__
@@ -36,7 +38,7 @@ I am using React.js with font awesome for chevrons and trash icons, plus react r
          - [ ] Upload custom audio
          - [ ] PWA
          - [ ] Offline Service/Storage
-         - [ ] Production Mode 
+         - [ ] Production Mode
          - [ ] Optimization
 
   __Optimization :__
