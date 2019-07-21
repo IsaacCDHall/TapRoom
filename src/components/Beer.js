@@ -34,7 +34,7 @@ class Beer extends Component {
         <br/>
         <section>
           <div className='beerContainer'>
-            {beerList.map((bev, index) =>
+            {this.props.beerList.map((bev, index) =>
               <BeerDisplay
                 name={bev.beerName}
                 details={bev.details}
