@@ -14,9 +14,13 @@ class App extends Component {
     }
     this.handleAddPint = this.handleAddPint.bind(this);
     this.handleSellPint = this.handleSellPint.bind(this);
+    this.apples = this.apples.bind(this);
     this.updateClass = this.updateClass.bind(this);
     this.handleDeleteKeg = this.handleDeleteKeg.bind(this);
 
+  }
+  apples(i){
+    console.log(i);
   }
 
   handleSellPint(eachBeer){
@@ -80,7 +84,7 @@ class App extends Component {
 
             <Switch>
               <Route exact path ='/' component={MainPage}/>
-              <Route exact path ='/Beers' component={() => <Beer beerList={this.state.beerList} handleDeleteKeg={this.handleDeleteKeg} handleSellPint={this.handleSellPint} handleAddPint={this.handleAddPint}/>}/>
+              <Route exact path ='/Beers' component={() => <Beer beerList={this.state.beerList} handleDeleteKeg={this.handleDeleteKeg.bind(this)} handleSellPint={this.handleSellPint} handleAddPint={this.handleAddPint}/>}/>
             </Switch>
           </HashRouter>
         </div>

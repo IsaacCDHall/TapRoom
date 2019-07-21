@@ -43,6 +43,7 @@ class Beer extends Component {
                 volume={bev.volume}
                 handleSellPint={this.props.handleSellPint}
                 handleAddPint={this.props.handleAddPint}
+                handleDeleteKeg={this.props.handleDeleteKeg}
                 className='zzz'
               />
             )}
