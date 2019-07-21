@@ -62,7 +62,9 @@ function BeerDisplay(props){
         i:active{
           opacity: 1;
           color: red;
-
+        }
+        .fa-trash:hover{
+          color: red;
         }
       `}
       </style>
@@ -78,11 +80,14 @@ function BeerDisplay(props){
             }
           </div>
       </div>
+
       <div className='d'>
           <i  onClick ={addPint} className="fa fa-angle-up fa-2x"></i>
 
-          <i className='hoverColor' onClick={deleteKeg} className="fa fa-angle-down fa-2x"></i>
+          <i  onClick={sellPint} className="fa fa-angle-down fa-2x"></i>
+
       </div>
+      <i onClick={deleteKeg} className="fa fa-trash"></i>
     </div>
 
   );

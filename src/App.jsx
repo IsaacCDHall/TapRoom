@@ -82,6 +82,7 @@ class App extends Component {
             <Switch>
               <Route exact path ='/' component={MainPage}/>
               <Route exact path ='/Beers' component={() => <Beer beerList={this.state.beerList} handleDeleteKeg={this.handleDeleteKeg} handleSellPint={this.handleSellPint} handleAddPint={this.handleAddPint}/>}/>
+              <Route exact path ='/Admin' component={() => <Beer beerList={this.state.beerList} handleDeleteKeg={this.handleDeleteKeg}/>}/>
             </Switch>
           </HashRouter>
         </div>
