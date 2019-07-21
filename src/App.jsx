@@ -5,6 +5,7 @@ import Header from './components/Header.js'
 import MainPage from './components/MainPage.js'
 import beerList from './models/beerList.js'
 import Beer from './components/Beer.js'
+import NewKegControl from './components/NewKegControl.js'
 class App extends Component {
   constructor(props){
     super(props)
@@ -16,9 +17,9 @@ class App extends Component {
     this.handleSellPint = this.handleSellPint.bind(this);
     this.updateClass = this.updateClass.bind(this);
     this.handleDeleteKeg = this.handleDeleteKeg.bind(this);
+    this.handleAddKeg = this.handleAddKeg.bind(this);
 
   }
-
   handleSellPint(eachBeer){
     console.log('sellPint');
     let newState = Object.assign([], this.state.beerList);
@@ -33,31 +34,36 @@ class App extends Component {
   }
   handleAddPint(eachBeer){
     console.log('buyPint');
-    let newStateZ = Object.assign([], this.state.beerList);
-    for (let i=0; i<newStateZ.length; i++){
-      if (newStateZ[i].id === eachBeer.id){
-        newStateZ[i].volume ++;
-        console.log(newStateZ[i].volume);
+    let newState = Object.assign([], this.state.beerList);
+    for (let i=0; i<newState.length; i++){
+      if (newState[i].id === eachBeer.id){
+        newState[i].volume ++;
+        console.log(newState[i].volume);
       };
     };
     console.log(eachBeer)
-    this.setState({beerList: newStateZ});
+    this.setState({beerList: newState});
   }
 
+  handleAddKeg(newKeg){
+    let newState = Object.assign([], this.state.beerList.slice());
+    newState.push(newKeg);
+    this.setState({kegList: newState});
+  }
   handleDeleteKeg(eachBeer){
     console.log('deleteKeg');
     console.log(eachBeer);
-    let newStateX = Object.assign([], this.state.beerList.slice());
-    console.log(newStateX)
-    for (let i=0; i < newStateX.length; i++){
+    let newState = Object.assign([], this.state.beerList.slice());
+    console.log(newState)
+    for (let i=0; i < newState.length; i++){
       console.log(i);
-      if (newStateX[i].id === eachBeer.id){
-        newStateX.splice(i,1);
-        console.log(newStateX[i])
+      if (newState[i].id === eachBeer.id){
+        newState.splice(i,1);
+        console.log(newState[i])
         console.log(eachBeer)
       }
     }
-    this.setState({beerList: newStateX});
+    this.setState({beerList: newState});
   }
 
 
@@ -82,7 +88,8 @@ class App extends Component {
             <Switch>
               <Route exact path ='/' component={MainPage}/>
               <Route exact path ='/Beers' component={() => <Beer beerList={this.state.beerList} handleDeleteKeg={this.handleDeleteKeg} handleSellPint={this.handleSellPint} handleAddPint={this.handleAddPint}/>}/>
-              <Route exact path ='/Admin' component={() => <Beer beerList={this.state.beerList} handleDeleteKeg={this.handleDeleteKeg}/>}/>
+              <Route exact path = '/Admin' render={() =><NewKegControl  onNewKegCreation={this.handleAddKeg}/>} />
+
             </Switch>
           </HashRouter>
         </div>
