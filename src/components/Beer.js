@@ -48,7 +48,7 @@ class Beer extends Component {
               />
             )}
 
-        </div>
+          </div>
         </section>
       </div>
     );

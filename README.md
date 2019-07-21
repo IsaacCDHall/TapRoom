@@ -1,4 +1,4 @@
-# SpongeBob Kegger
+# React Taproom Practice
 
 1. [Description](#description)
 1. [Goals](#Goals)
@@ -28,7 +28,7 @@ I am using React.js with font awesome for chevrons and trash icons, plus react r
          - [x] Documentation accurately represents component/state structure of application.
          - [ ] Add form creation for new beers
          - [ ] Add Delete Keg button
-       
+
 
  __Stretch Goals :__
 
