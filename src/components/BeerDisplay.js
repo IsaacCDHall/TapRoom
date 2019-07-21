@@ -11,6 +11,10 @@ function BeerDisplay(props){
     props.handleSellPint({id: props.id});
     console.log(props.volume)
   }
+  function deleteKeg(){
+    
+    console.log(props)
+  }
   console.log(props);
   return (
     <div className = 'e'>
@@ -77,7 +81,7 @@ function BeerDisplay(props){
       <div className='d'>
           <i  onClick ={addPint} className="fa fa-angle-up fa-2x"></i>
 
-          <i className='hoverColor' onClick={sellPint} className="fa fa-angle-down fa-2x"></i>
+          <i className='hoverColor' onClick={deleteKeg} className="fa fa-angle-down fa-2x"></i>
       </div>
     </div>
 
