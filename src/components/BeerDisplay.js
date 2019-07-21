@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function BeerDisplay(props){
   console.log(props)
 
@@ -12,14 +11,9 @@ function BeerDisplay(props){
     props.handleSellPint({id: props.id});
     console.log(props.volume)
   }
-  function apples(){
-    props.apples({id: props.id});
-    console.log(props.volume)
-  }
   function deleteKeg(){
-
+    props.handleDeleteKeg({id: props.id});
     console.log(props)
-
   }
   console.log(props);
   return (
