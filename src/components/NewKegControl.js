@@ -1,5 +1,5 @@
 import React from 'react';
-import ConfirmationQuestions from'./ConfirmationQuestions';
+import Confirm from'./Confirm';
 import NewKegForm from './NewKegForm.js';
 class NewKegControl extends React.Component {
 
@@ -7,26 +7,26 @@ class NewKegControl extends React.Component {
     super(props);
     this.state = {
       formVisibleOnPage: false,
-      sampleBeerName: ' ',
-      sampleVolume: ' ',
-      sampleBrewery: ' ',
-      sampleAbv: ' '
+      sampleBeerName: '',
+      sampleVolume: '',
+      sampleBrewery: '',
+      sampleAbv: ''
     };
 
-    this.handleNewKegFormSubmission = this.handleNewKegFormSubmission.bind(this);
+    this.handleAddKeg = this.handleAddKeg.bind(this);
   }
 
-  handleNewKegFormSubmission(){
+  handleAddKeg(){
     this.setState({formVisibleOnPage: true});
     console.log(this.formVisibleOnPage);
   }
 
   render(){
-    let currentlyVisibleContent = null;
+    let currentlyVisibleContent;
     if (this.state.formVisibleOnPage){
       currentlyVisibleContent = <NewKegForm  onNewKegCreation={this.props.onNewKegCreation} />;
     } else {
-      currentlyVisibleContent = <ConfirmationQuestions onFormSubmission={this.handleNewKegFormSubmission} />;
+      currentlyVisibleContent = <Confirm onFormSubmission={this.handleAddKeg} />;
     }
     return(
       <div>

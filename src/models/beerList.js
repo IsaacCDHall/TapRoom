@@ -3,7 +3,7 @@ const beerList = [
     beerName: 'pruno',
     details: [
       'My Bathtub',
-      '5% abv'
+      '5'
     ],
     brewery: 'My Bathtub',
     abv: '5%',
@@ -14,7 +14,7 @@ const beerList = [
     beerName: 'pruno1',
     details: [
       'My Bathtub',
-      '5% abv'
+      '5'
     ],
     brewery: 'My Bathtub',
     abv: '5%',
@@ -25,7 +25,7 @@ const beerList = [
     beerName: 'pruno2',
     details: [
       'My Bathtub',
-      '5% abv'
+      '5'
     ],
     brewery: 'My Bathtub',
     abv: '5%',
@@ -36,7 +36,7 @@ const beerList = [
     beerName: 'pruno3',
     details: [
       'My Bathtub',
-      '5% abv'
+      '5'
     ],
     brewery: 'My Bathtub',
     abv: '5%',
@@ -47,7 +47,7 @@ const beerList = [
     beerName: 'pruno4',
     details: [
       'My Bathtub',
-      '5% abv'
+      '5'
     ],
     brewery: 'My Bathtub',
     abv: '5%',
@@ -58,7 +58,7 @@ const beerList = [
     beerName: 'pruno5',
     details: [
       'My Bathtub',
-      '5% abv'
+      '5'
     ],
     brewery: 'My Bathtub',
     abv: '5%',
@@ -69,7 +69,7 @@ const beerList = [
     beerName: 'pruno6',
     details: [
       'My Bathtub',
-      '5% abv'
+      '5'
     ],
     brewery: 'My Bathtub',
     abv: '5%',
@@ -80,7 +80,7 @@ const beerList = [
     beerName: 'pruno777',
     details: [
       'My Bathtub',
-      '100% abv'
+      '100'
     ],
     brewery: 'My Bathtub',
     abv: '100%',

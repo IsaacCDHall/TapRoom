@@ -21,7 +21,7 @@ function BeerDisplay(props){
       <style jsx>{`
 
         .a{
-          border-bottom: solid 2px black;
+          border-bottom: solid 2px white;
           width: 75%;
           padding-bottom: 2em;
           color: white;
@@ -79,8 +79,14 @@ function BeerDisplay(props){
 
         {
           props.details.map((bev,i)=>{
-            console.log(bev)
-            return <p className='c' key={i}>{bev}</p>;
+            if (i == 1){
+              console.log(bev)
+              return <p className='c' key={i}>{bev}% abv</p>;
+            }else{
+
+              return <p className='c' key={i}>{bev}</p>;
+            }
+            console.log(i)
           })
         }
 

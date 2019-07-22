@@ -33,6 +33,8 @@ I am using React.js with font awesome for chevrons and trash icons, plus react r
  __Stretch Goals :__
 
          - [x] DRY CODE
+         - [ ] Static Header with zIndex scroll
+         - [ ] Style Keg Form 
          - [ ] React Hook
          - [ ] Svg animation with anime.js
          - [ ] Upload custom audio
