@@ -8,16 +8,17 @@
 1. [Scripts](#Scripts)
 
 ### Description
+
 I am using React.js with font awesome for chevrons and trash icons, plus react router dom for a HashRouter
 
 ### Goals
 
- __Tasks :__
+**Tasks :**
 
          - [x] A completed task
          - [ ] An uncompleted task
 
- __MVP :__
+**MVP :**
 
          - [x] Webpack
          - [x] Dev Server HMR/Hot-swapping
@@ -29,12 +30,11 @@ I am using React.js with font awesome for chevrons and trash icons, plus react r
          - [ ] Add form creation for new beers
          - [ ] Add Delete Keg button
 
-
- __Stretch Goals :__
+**Stretch Goals :**
 
          - [x] DRY CODE
          - [ ] Static Header with zIndex scroll
-         - [ ] Style Keg Form 
+         - [ ] Style Keg Form
          - [ ] React Hook
          - [ ] Svg animation with anime.js
          - [ ] Upload custom audio
@@ -43,7 +43,7 @@ I am using React.js with font awesome for chevrons and trash icons, plus react r
          - [ ] Production Mode
          - [ ] Optimization
 
-  __Optimization :__
+**Optimization :**
 
          - [NA/100] Performance
          - [NA/100] Accessibility
@@ -61,19 +61,13 @@ I am using React.js with font awesome for chevrons and trash icons, plus react r
 
 ### Notes
 
-* Need to create oAuth page for login verification, custom/favorite beer list
+[![Netlify Status](https://api.netlify.com/api/v1/badges/48c6f8bb-4fdf-4ef2-9d6a-bbef66aef583/deploy-status)](https://app.netlify.com/sites/taproom/deploys)
+
+- Need to create oAuth page for login verification, custom/favorite beer list
 
 ### License
+
 MIT
-
-
-
-
-
-
-
-
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
